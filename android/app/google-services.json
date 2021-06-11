@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "180662977681",
+    "project_id": "hospitalmanagementsystem-18672",
+    "storage_bucket": "hospitalmanagementsystem-18672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180662977681:android:7cb8215f60db876bff2b30",
+        "android_client_info": {
+          "package_name": "com.example.hms_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180662977681-k76mu4jg9e0rsensf3plndsnvf5iprbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB9aHEib9rxe8dAS6K3676-EgVlU_hdbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180662977681-k76mu4jg9e0rsensf3plndsnvf5iprbe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "180662977681-bde81jqk4k5jf5okfaifqn4eqa20ir3f.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hmsFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
