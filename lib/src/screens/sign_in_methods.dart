@@ -49,7 +49,7 @@ class SignInMethods extends StatelessWidget {
             child: ElevatedButton(
               child: Text('Guest Login'),
               onPressed: () async {
-                _signInAnonymously();
+               await _signInAnonymously();
                 Navigator.push(
                     context,
                     MaterialPageRoute(

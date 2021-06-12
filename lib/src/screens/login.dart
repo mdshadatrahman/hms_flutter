@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hms_flutter/src/app.dart';
 import 'package:hms_flutter/src/screens/home.dart';
 
@@ -61,11 +62,25 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               ElevatedButton(
                 child: Text('Log In'),
-                onPressed: () {
-                  auth.signInWithEmailAndPassword(
+                onPressed: () async{
+                  try {
+                    await auth.signInWithEmailAndPassword(
                       email: _email, password: _password);
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => HomeScreen()));
+                  } catch (e) {
+                    Fluttertoast.showToast(
+                      msg: e.toString(),
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Colors.blue,
+                      textColor: Colors.white,
+                      fontSize: 16.0,
+                    );
+                    //print(e.toString());
+                  }
+                  
                 },
               ),
             ],
