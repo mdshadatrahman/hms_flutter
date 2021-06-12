@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hms_flutter/src/screens/login.dart';
+import 'package:hms_flutter/src/screens/sign_in_methods.dart';
 
 class App extends StatelessWidget {
   @override
@@ -10,7 +10,8 @@ class App extends StatelessWidget {
         accentColor: Colors.orange,
         primaryColor: Colors.blue,
       ),
-      home: LoginScreen(),
+      //home: LoginScreen(),
+      home: SignInMethods(),
     );
   }
 }

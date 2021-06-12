@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:hms_flutter/src/app.dart';
 import 'package:hms_flutter/src/screens/home.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -14,7 +15,14 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Log in'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+          iconSize: 20.0,
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: Text('Login'),
         centerTitle: true,
       ),
       body: Column(
