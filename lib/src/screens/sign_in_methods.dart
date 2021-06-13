@@ -27,7 +27,7 @@ class SignInMethods extends StatelessWidget {
               child: ElevatedButton(
                 child: Text('Login with Email'),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.blue,
+                  primary: Colors.grey[700],
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -43,7 +43,7 @@ class SignInMethods extends StatelessWidget {
               child: ElevatedButton(
                 child: Text('Login with Google'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.red,
+                    primary: Colors.grey[700],
                 ),
                 onPressed: () {},
               ),
@@ -53,7 +53,7 @@ class SignInMethods extends StatelessWidget {
               child: ElevatedButton(
                 child: Text('Guest Login'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.grey,
+                    primary: Colors.grey[700],
                 ),
                 onPressed: () async {
                   dynamic result = await _auth.signInAnon();
